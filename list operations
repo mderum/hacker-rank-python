@@ -1,0 +1,61 @@
+Sample Input 0
+
+# 12
+# insert 0 5
+# insert 1 10
+# insert 0 6
+# print
+# remove 6
+# append 9
+# append 1
+# sort
+# print
+# pop
+# reverse
+# print
+# Sample Output 0
+
+# [6, 5, 10]
+# [1, 5, 9, 10]
+# [9, 5, 1]
+
+
+
+
+
+
+if __name__ == '__main__':
+    N = int(input())
+    list1=[]
+
+    while N >0:
+        command,*pos=input().split()
+        
+        if command=='insert':
+            list1.insert(int(pos[0]),int(pos[1]))
+    
+        if command=='remove':
+            list1.remove(int(pos[0]))
+            
+        if command=='print':
+            print(list1) 
+    
+        if command=='append':
+            list1.append((int(pos[0])))
+            
+        if command=='sort':
+            list1.sort()  
+        
+        
+        if command=='pop':
+            list1.pop()   
+        
+        
+        if command=='reverse':
+            list1.reverse()  
+                
+        N-=1
+      
+    
+
+
