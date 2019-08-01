@@ -1,0 +1,18 @@
+Sample Input
+
+# abracadabra
+# 5 k
+
+
+# Sample Output
+
+# abrackdabra
+
+
+
+def mutate_string(string, position, character):
+    l=list(string)
+    l[position]=character
+    s2=''.join(l)
+    
+    return s2
